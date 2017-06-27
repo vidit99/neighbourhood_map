@@ -1,0 +1,93 @@
+.imp {
+	list-style: square url(purple.jpg);
+	padding: 0em;
+}
+
+.imp-hii {
+	width: 59%;
+	display: flex;
+	white-space: nowrap;	
+}
+
+.ig {
+	border-top: 25px solid cyan;
+	padding: 1em;
+	background: grey;
+	height:300px;
+	color: yellow;
+}
+
+.ig-div {
+	display: block;
+	width:40%;
+}
+
+.ig-div img{
+	width:20%;
+	height:10%;
+}
+
+.imp-hii:hover {
+	background: black;
+	cursor: pointer;
+}
+
+body {
+	background: lightgrey;
+	color: red;
+}
+
+.info-content img {
+	width: 100%;
+    margin-right: 15px;
+}
+
+#map {
+    width: 100%;
+    height: 70em;
+}
+
+
+@media only screen and (min-width: 768px) 
+{
+	.imp
+	{
+		padding-bottom: 5em;
+	}
+	.imp-hii {
+		overflow: hidden;
+		width: 33.33%;
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+	#map {
+	    height: 80vh;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2  {
+		font-size: 25px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.imp {
+		padding-bottom: 1.5em;
+	}
+	.imp-hii {
+		width: 100%;
+		display: inline;
+		line-height: 2em;
+		border-bottom: 1px solid yellow;
+		font-size: 1.39em;
+	}
+	.ig-div {
+		display: inline;
+		width:50%;
+	}
+}
+
+

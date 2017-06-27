@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<title>
+		Udacity Project
+	</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="row a">
+		<div class="col-sm-12">
+			<div><span data-bind="text: errorfunc"></span>
+			</div>
+				<header class="">
+					<form>
+						<div class="b">
+							<h2>
+								<center>
+									NEIGHBOURHOOD MAP PROJECT
+								</center>
+							</h2>
+							<input placeholder="search place" data-bind="value: searchbar, valueUpdate: 'afterkeydown', event: {keyup: applyFilter}" id="find" name="find" class="form-control"  width="40%">
+						</div>
+					</form>
+				</header>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<!--1st section-->
+			<section class="col-md-8 section-content">	
+				<!--2nd div in 1st section-->
+				<div class="row">
+					<div class="col-sm-12" id="map">
+						<div data-bind = "text : errorDisplay">
+						</div>
+					</div>
+				</div>    
+			</section>
+				<!--2nd section-->
+			<section class="section-nav col-md-4">
+				<!--1st div in 2nd section-->
+				<div class="row">
+					<div class="col-sm-6">
+						<ul data-bind="foreach: array_list" class="imp">
+							<li data-bind="text: $data.name,visible: show, click: $parent.directselect"  class="imp-hii col-md-12 col-sm-6">
+								oops  some error
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!------------------------scripts-->
+	<script src="js/app.js"></script>
+	<script src="js/knockout-3.4.0.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcj0gBhIPp3E85opl-07yAylP1mLlNyXY&callback=start" onerror="mapError()">	
+	</script>
+</body>
